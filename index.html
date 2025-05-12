@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifying Objects</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Modifying Objects</h1>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>In this lesson, we will learn how to modify objects in JavaScript.</p>
+        </section>
+
+        <section id="object-modification">
+            <h2>Object Modification</h2>
+            <p>We can add, update, and delete properties from objects.</p>
+            <pre><code class="language-javascript">
+// Creating an object
+const person = {
+    name: 'Alice',
+    age: 25
+};
+// Adding a new property
+person.city = 'New York';
+// Updating an existing property
+person.age = 26;
+// Deleting a property
+delete person.city;     
+console.log(person); // { name: 'Alice', age: 26 }
+            </code></pre>
+        </section>
+
+        <section id="practice">
+            <h2>Practice</h2>
+            <p>Try modifying the object below:</p>
+            <pre><code class="language-javascript">
+// Create an object called 'car' with properties 'make', 'model', and 'year'
+const car = {
+    make: 'Toyota',
+    model: 'Corolla',
+    year: 2020
+};
+// Add a property 'color' with the value 'red'
+car.color = 'red';
+// Update the 'year' property to 2021
+car.year = 2021;
+// Delete the 'model' property
+delete car.model;
+console.log(car); // { make: 'Toyota', year: 2021, color: 'red' }
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 JavaScript learning</p>
+    </footer>
+</html>
